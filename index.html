@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOアプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TODOアプリ</h1>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="新しいタスクを入力..." maxlength="200">
+            <button id="addButton">追加</button>
+        </div>
+
+        <div class="tasks-section">
+            <ul id="taskList" class="task-list"></ul>
+        </div>
+
+        <footer class="stats">
+            <span>全タスク: <span id="totalTasks">0</span></span>
+            <span>完了: <span id="completedTasks">0</span></span>
+            <span>未完了: <span id="pendingTasks">0</span></span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
